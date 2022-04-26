@@ -1,0 +1,143 @@
+.sidebar{
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 23%;
+  box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+  padding: 26px 0;
+  height: 100%;
+  transition: all 1s ease-out;
+}
+
+@media only screen and (max-width: 960px) {
+  .sidebar{
+    position: absolute;
+    top: 0;
+    left: -306px;
+    opacity: 0;
+  }
+
+  .sidebar-active{
+    left: 0px;
+    opacity: 1;
+    width: 213px;
+  }
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.logo-name{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+@media only screen and (max-width: 960px){
+  .logo{
+    display: none;
+  }
+}
+.profile{
+  width: max-content;
+  margin: 0 auto;
+}
+
+.profile-img-div{
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+.profile__name{
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--color-purple-1);
+  margin-top: 3px;
+}
+
+.profile__wlc{
+  font-weight: 400;
+  font-size: 10px;
+  margin-top: 4px;
+  color: var(--color-grey-2);
+  text-align: center;
+}
+
+.profile__plan{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--color-grey-2);
+  text-align: center;
+  margin-top: 3px;
+}
+.free{
+  color: #33D69F;
+}
+.profile__create--btn{
+  display: block;
+  width: 168px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color: var(--color-purple-2);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .5s ease-out;
+}
+
+.profile__create--btn:active{
+  transform: translateY(2px);
+}
+
+.sidenav{
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.sidenav__item{
+  display: flex;
+  align-items: center;
+  font-weight:400;
+  font-size: 16px;
+  color: var(--color-grey-2);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.sidenav__item p{
+  margin-left: 26px;
+}
+.active{
+  color: var(--color-purple-2);
+  font-weight: 600;
+}
+
+.logout-div{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+  left: 88px;
+  cursor: pointer;
+  z-index: 4;
+}
+@media only screen and (max-width: 960px) {
+  .logout-div{
+    left: 57px;
+  }
+}
+.logout{
+  margin-left: 14px;
+  color: var(--color-grey-2);
+  font-size: 16px;
+}

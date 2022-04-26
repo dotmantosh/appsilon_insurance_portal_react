@@ -1,0 +1,243 @@
+.main{
+  flex: 1;
+}
+
+.main__header{
+  height: 87px;
+  background-color: #fff;
+  width: 100%;
+  border-top-right-radius: 20px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+@media only screen and (max-width: 960px) {
+  .main__header{
+    border-top-left-radius: 20px;
+  }
+}
+
+.menu-icon{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 25px;
+  color: var(--color-grey-2);
+  transform: translateY(-50%);
+  display: none;
+  cursor: pointer;
+  z-index: 4;
+}
+
+@media only screen and (max-width: 960px) {
+  .menu-icon{
+    display: block;
+  }
+}
+
+.main__header ul{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 55px;
+  list-style: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .main__header ul{
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+.header-link{
+  font-size: 16px;
+  color: var(--color-grey-2);
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.link-active{
+  color: var(--color-purple-2);
+  font-weight: 600;
+  position: relative;
+}
+
+.link-active div{
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 30% ;
+  height: 2px;
+  border-radius: 1px;
+  transform: translateX(-50%);
+  background-color: var(--color-purple-2);
+}
+
+.dashboard__content{
+  padding-top: 36px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.reports__top{
+  max-width: 981px;
+  height: 311px;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reports__top img{
+  height: 100%;
+}
+
+.area2, .area3  {
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+@media only screen and (max-width: 960px) {
+  .area2,.area3{
+    display: none;
+  }
+}
+.reports-info{
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  color: var(--color-grey-1);
+}
+
+.reports-info-bottom{
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+.reports-info-bottom div{
+  font-size: 22px;
+  border-radius: 5px;
+  width: 140px;
+  padding: 7px 0;
+  border: 1px dashed var(--color-grey-1);
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.reports-info-bottom p{
+  font-weight: 600;
+}
+
+.reports_bottom{
+  max-width: 981px;
+  display: flex;
+  
+  justify-content: space-between;
+
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.report-card{
+  
+  width: 32%;
+  height: 298px;
+  margin-top: 20px;
+  color: var(--color-grey-1);
+  background-color: #fff;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-bottom: 28px;
+  padding-top: 7px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.06);
+
+}
+
+@media only screen and (max-width: 960px) {
+  .report-card{
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .report-card{
+    width: 100%;
+  }
+}
+
+.policy{
+  margin-top: 40px;
+}
+
+.policy-progress{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  margin-top: 8px;
+  background-image: linear-gradient(to right, #ECECEC,#F2F1F1);
+}
+.policy-progress-inner{
+  width: 60%;
+  height: 5px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #33D69F, #50EDB8);
+}
+.claim{
+  margin-top: 40px;
+}
+.claim-progress{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  margin-top: 8px;
+  background-image: linear-gradient(to right, #ECECEC,#F2F1F1);
+}
+.claim-progress-inner{
+  width: 80%;
+  height: 5px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #713BDB, #A886E9);
+}
+.report-price{
+  Font-size: 55px;
+  position: relative;
+  width: max-content;
+}
+
+.report-price span{
+  color: var(--color-purple-2);
+  font-size: 35px;
+  position: absolute;
+  top: -6px;
+  right: -16px;
+}
+
+.report-description{
+  font-size: 17px;
+}
+
+.report-top-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.report-head{
+  font-size: 17px;
+}
+
+.report-card-price{
+  font-size: 22px;
+  position: relative;
+}
+
+.dol-icon{
+  font-size: 13px;
+  position: absolute;
+  top: -1px;
+  right: -7px;
+}

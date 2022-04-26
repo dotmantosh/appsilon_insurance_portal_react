@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./assets/fonts/Segoe\ UI.ttf");
+}
+
+:root{
+  --color-purple-1: #888CB7;
+  --color-purple-2: #713BDB;
+
+  --color-grey-1: #42474A;
+  --color-grey-2: #A2A4B9;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI'; /* 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif */
+ /*  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
