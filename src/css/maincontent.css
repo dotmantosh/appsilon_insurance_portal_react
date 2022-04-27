@@ -87,6 +87,7 @@
 }
 
 .reports__top img{
+  max-width: 507px;
   height: 100%;
 }
 
