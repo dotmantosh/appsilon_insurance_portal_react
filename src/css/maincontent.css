@@ -118,6 +118,17 @@
   }
 }
 
+.reports-info-top h2{
+  font-size: 33px;
+  font-weight: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .reports-info-top h2{
+    font-size: 25px;
+  }
+}
+
 .reports-info-bottom{
   display: flex;
   align-items: center;
