@@ -81,16 +81,18 @@
 
 .reports__top{
   max-width: 981px;
-  height: 311px;
+  max-height: 311px;
   position: relative;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
-.reports__top img{
+.reports__top--img{
   max-width: 507px;
-  height: 100%;
+  height: max-content;
 }
-
+.reports__top--img img{
+  width: 100%;
+}
 .area2, .area3  {
   width: 100%;
   position: absolute;
