@@ -1,8 +1,33 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ReportImg from '../../assets/imgs/Insurance_-Agent-_Service_VectorForFree- 1.png'
+import ReportCard from '../card/ReportCard'
 import Area2 from '../svgicons/Area2'
 import Area3 from '../svgicons/Area3'
+
 function Reports() {
+  const [reports, setReports] = useState([
+    {
+      price: 1000,
+      policy: 400,
+      policyPercent: "40%",
+      claim: 800,
+      claimPercent: "90%",
+    },
+    {
+      price: 2500,
+      policy: 1100,
+      policyPercent: "65%",
+      claim: 1400,
+      claimPercent: "80%",
+    },
+    {
+      price: 2500,
+      policy: 1100,
+      policyPercent: "70%",
+      claim: 1400,
+      claimPercent: "85%",
+    },
+  ])
   return (
     <div className="reports">
       <div className="reports__top">
@@ -26,81 +51,10 @@ function Reports() {
       </div>
 
       <div className="reports_bottom">
-        <div className="report-card">
-          <h4 className='report-price'>1000 <span>$</span> </h4>
-          <p className='report-description'>Total Value of Disbursement</p>
-          
-          <div className="policy">
-            <div className="report-top-heading">
-              <p className='report-head'>Policy</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="policy-progress">
-              <div className="policy-progress-inner"> </div>
-            </div>
-          </div>
-          <div className="claim">
-          <div className="report-top-heading">
-              <p className='report-head'>Claim</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="claim-progress">
-              <div className="claim-progress-inner"> </div>
-            </div>
-          </div>
-        </div>
-        <div className="report-card">
-          <h4 className='report-price'>1000 <span>$</span> </h4>
-          <p className='report-description'>Total Value of Disbursement</p>
-          
-          <div className="policy">
-            <div className="report-top-heading">
-              <p className='report-head'>Policy</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="policy-progress">
-              <div className="policy-progress-inner"> </div>
-            </div>
-          </div>
-          <div className="claim">
-          <div className="report-top-heading">
-              <p className='report-head'>Claim</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="claim-progress">
-              <div className="claim-progress-inner"> </div>
-            </div>
-          </div>
-        </div>
-        <div className="report-card">
-          <h4 className='report-price'>1000 <span>$</span> </h4>
-          <p className='report-description'>Total Value of Disbursement</p>
-          
-          <div className="policy">
-            <div className="report-top-heading">
-              <p className='report-head'>Policy</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="policy-progress">
-              <div className="policy-progress-inner"> </div>
-            </div>
-          </div>
-          <div className="claim">
-          <div className="report-top-heading">
-              <p className='report-head'>Claim</p>
-              <p className='report-card-price'>1000<span className='dol-icon'>$</span></p>
-            </div>
-
-            <div className="claim-progress">
-              <div className="claim-progress-inner"> </div>
-            </div>
-          </div>
-        </div>
+        {reports.map((report, key)=>{
+          return <ReportCard report={report}/>
+        })}
+        
       </div>
     </div>
   )
