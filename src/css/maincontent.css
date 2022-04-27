@@ -110,6 +110,13 @@
   top: 30%;
   color: var(--color-grey-1);
 }
+@media only screen and (max-width: 600px) {
+  .reports-info{
+    text-align: center;
+    width: 100%;
+    right: 0;
+  }
+}
 
 .reports-info-bottom{
   display: flex;
