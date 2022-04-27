@@ -1,7 +1,7 @@
 .dashboard{
   display: flex;
   width: 98%;
-  height: 1125px;
+  min-height: 1125px;
   background: #F4F5F9;
   border-radius: 20px;
   position: relative;
