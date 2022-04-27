@@ -81,15 +81,18 @@
 
 .reports__top{
   max-width: 981px;
-  height: 311px;
+  max-height: 311px;
   position: relative;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
-.reports__top img{
-  height: 100%;
+.reports__top--img{
+  max-width: 507px;
+  height: max-content;
 }
-
+.reports__top--img img{
+  width: 100%;
+}
 .area2, .area3  {
   width: 100%;
   position: absolute;
@@ -106,6 +109,24 @@
   right: 10%;
   top: 30%;
   color: var(--color-grey-1);
+}
+@media only screen and (max-width: 600px) {
+  .reports-info{
+    text-align: center;
+    width: 100%;
+    right: 0;
+  }
+}
+
+.reports-info-top h2{
+  font-size: 33px;
+  font-weight: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .reports-info-top h2{
+    font-size: 25px;
+  }
 }
 
 .reports-info-bottom{

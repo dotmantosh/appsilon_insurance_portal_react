@@ -31,7 +31,9 @@ function Reports() {
   return (
     <div className="reports">
       <div className="reports__top">
-        <img src={ReportImg} alt="report" />
+        <div className="reports__top--img">
+          <img src={ReportImg} alt="report" />
+        </div>
         <div className="area2">
         <Area2 width={"100%"}/>
         </div>
